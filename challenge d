@@ -92,34 +92,47 @@ live_loop:background_notes do
   stop
 end
 #optimose hgere
-
-# Measure 1
-play :r
+live_loop :nolan do
+  # Measure 1
+  play :r
+  sleep 1
+  play:E4
+  play:Gs4
+  sleep 2
+  play:E5
+  play:Gs4
+  sleep 1
+  # Measure 2
+  cranking
+  
+  # Measure 3
+  my_hog
+  
+  # Measure 4
+  my_hog
+  
+  # Measure 5
+  jorkin
+  
+  # Measure 6
+  my_hog
+  
+  # Measure 7
+  jorkin
+  
+  # Measure 8
+  my_hog
+  stop
+end
+8.times do
+  sleep 1
+  sample :bd_chip
+  sleep 1
+  sample :glitch_perc3
+  sleep 1
+  sample :bd_tek
+  sleep 1
+  sample :glitch_perc3
+end
 sleep 1
-play:E4
-play:Gs4
-sleep 2
-play:E5
-play:Gs4
-sleep 1
-
-# Measure 2
-cranking
-
-# Measure 3
-my_hog
-
-# Measure 4
-my_hog
-
-# Measure 5
-jorkin
-
-# Measure 6
-my_hog
-
-# Measure 7
-jorkin
-
-# Measure 8
-my_hog
+sample :misc_burp
