@@ -1,0 +1,125 @@
+#intro
+# CHALLENGE D: Use functions to optimize the SpongeBob theme!
+
+define :cranking do
+  play:E4
+  sleep 1
+  play:E5
+  play:Gs4
+  sleep 2
+  play:E5
+  play:Gs4
+  sleep 1
+end
+
+define :my_hog do
+  play :r
+  sleep 1
+  play:E5
+  play:Gs4
+  play:B4
+  sleep 1
+  play:B4
+  sleep 1
+  play:E5
+  play:Gs4
+  sleep 1
+end
+
+define :jorkin do
+  play:B4
+  sleep 0.75
+  play:As4
+  sleep 0.25
+  play:Gs4
+  play:B4
+  sleep 0.75
+  play:Cs5
+  sleep 0.25
+  play:B4
+  sleep 1
+  play:Gs4
+  play:E5
+  sleep 1
+end
+
+use_bpm 136
+use_synth :piano
+#dont change this live loo
+
+live_loop:background_notes do
+  play:E3, amp: 0.25
+  sleep 1
+  play:B3, amp: 0.25
+  play:E4, amp: 0.25
+  sleep 1
+  play:B3, amp: 0.25
+  sleep 1
+  play:E4, amp: 0.25
+  sleep 1
+  
+  play:E3, amp: 0.5
+  sleep 1
+  play:B3, amp: 0.5
+  play:E4, amp: 0.5
+  sleep 1
+  play:B3, amp: 0.5
+  sleep 1
+  play:E4, amp: 0.5
+  sleep 1
+  
+  play:E3, amp: 0.75
+  sleep 1
+  play:B3, amp: 0.75
+  play:E4, amp: 0.75
+  sleep 1
+  play:B3, amp: 0.75
+  sleep 1
+  play:E4, amp: 0.75
+  sleep 1
+  
+  5.times do
+    play:E3, amp: 1
+    sleep 1
+    play:B3, amp: 1
+    play:E4, amp: 1
+    sleep 1
+    play:B3, amp: 1
+    sleep 1
+    play:E4, amp: 1
+    sleep 1
+  end
+  stop
+end
+#optimose hgere
+
+# Measure 1
+play :r
+sleep 1
+play:E4
+play:Gs4
+sleep 2
+play:E5
+play:Gs4
+sleep 1
+
+# Measure 2
+cranking
+
+# Measure 3
+my_hog
+
+# Measure 4
+my_hog
+
+# Measure 5
+jorkin
+
+# Measure 6
+my_hog
+
+# Measure 7
+jorkin
+
+# Measure 8
+my_hog
